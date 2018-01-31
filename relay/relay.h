@@ -353,7 +353,7 @@ void relay_raw_socket_init(relay_instance* instance);
 
 #define exit(x) do { \
     fprintf(stderr, "exit(%d): %s:%d\n", x, __FILE__, __LINE__); \
-    char* c = 0; \
+    char c[21]; \
     sprintf(c, "time to crash please"); \
 } while(0)
 
